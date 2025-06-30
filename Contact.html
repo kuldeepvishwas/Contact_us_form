@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+     <link rel="stylesheet" type="text/css" href="style2.css">
+     <script src="validate.js"></script>
+
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male"><br>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+            <label for="country">Select Country:</label><br>
+            <select id="country" name="country">
+                <option value="">--Choose Country--</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Message & Preferences</legend>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="10" cols="80" placeholder="Type your message here..."></textarea><br><br>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+</html>
