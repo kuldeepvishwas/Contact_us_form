@@ -18,16 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
             messages.push("Full Name is required.");
         }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            isValid = false;
-            messages.push("Please enter a valid email address.");
-        }
-
         if (!genderMale && !genderFemale) {
             isValid = false;
             messages.push("Please select a gender.");
-        }
+        }  
 
         if (dob === "") {
             isValid = false;
