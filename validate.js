@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let messages = [];
 
         const fullname = document.getElementById("fullname").value.trim();
-        const email = document.getElementById("email").value.trim();
         const dob = document.getElementById("dob").value;
         const country = document.getElementById("country").value;
         const message = document.getElementById("message").value.trim();
